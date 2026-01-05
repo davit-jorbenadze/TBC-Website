@@ -1,0 +1,195 @@
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: white;
+  color: black;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+body {
+  background-color: #202125;
+  color: rgb(154, 160, 166);
+  padding: 2vw 24vw;
+  font-size: 15px;
+  font-family: "Inter";
+}
+
+@media screen and (max-width: 1100px) {
+  body {
+    padding: 8%;
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 7px;
+}
+
+a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #8ab4f8;
+  border-bottom-style: solid;
+  border-width: 1px;
+}
+
+a:hover {
+  border-bottom-style: dashed;
+  color: #bce5ff;
+  border-width: 1px;
+}
+
+#nav {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+#nav a {
+  text-decoration: none;
+  margin-right: 10px;
+  color: white;
+  border-bottom-style: solid;
+  border-width: 1px;
+}
+
+#nav a:hover {
+  border-bottom-style: dashed;
+}
+
+#pill {
+  font-weight: 500;
+  background-color: rgb(48, 49, 52);
+  border-radius: 2px;
+  color: white;
+  padding: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin: 3px;
+  margin-left: 0px;
+  cursor: pointer;
+}
+
+#pill:hover {
+  background-color: rgba(48, 49, 52, 0.5);
+}
+
+#seperator {
+  text-align: center;
+}
+
+#hero {
+  font-weight: 800;
+  color: white;
+  font-size: 32px;
+  margin-top: 32px;
+  margin-bottom: 8px;
+}
+
+#title {
+  font-weight: 800;
+  color: white;
+  font-size: 24px;
+}
+
+#blog {
+  font-weight: 500;
+}
+
+#blog #date {
+  font-size: 14px;
+  margin-right: 20px;
+}
+
+#blog li {
+  list-style: none;
+}
+
+#blog #title {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.wrap {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  margin-bottom:8px;
+}
+
+.easter-egg {
+  width: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin: 0;
+  cursor: pointer;
+}
+
+.easter-egg-span {
+  position: absolute;
+  left: 210px;
+  top: 0;
+  z-index: -1;
+}
+
+.easter-egg:hover {
+  overflow: visible;
+  white-space: normal;
+  width: auto;
+  background-color: #202125;
+  color: #fff;
+}
+
+#highlight {
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#highlight-purple {
+  color: #bb86fc;
+}
+
+#highlight-purple:hover {
+  color: #dbb2ff;
+}
+
+#live-link {
+  margin-left: 5px;
+  border-style: none;
+  border-bottom: 1px solid #bb86fc;
+}
+
+#live-link:hover {
+  border-bottom: 1px dashed #dbb2ff;
+}
+
+#code-block {
+  font-weight: 500;
+  color: #8ab4f8;
+  background-color: rgb(48, 49, 52);
+  border-radius: 4px;
+  padding: 4px 8px;
+  margin-top: 4px;
+}
+
+#code-block:hover {
+  background-color: rgba(48, 49, 52, 0.5);
+  cursor: help;
+}
+
+#github-graph {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
