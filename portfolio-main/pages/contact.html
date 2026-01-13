@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact</title>
+  <link rel="stylesheet" href="./page-style.css">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: #0e0e0e;
+      color: #eaeaea;
+    }
+
+    .contact-container {
+      max-width: 700px;
+      margin: 60px auto;
+      padding: 30px;
+      background: #161616;
+      border-radius: 14px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+    }
+
+    .contact-title {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #ffffff;
+    }
+
+    .contact-message {
+      margin-bottom: 30px;
+      color: #bdbdbd;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    input,
+    textarea {
+      background: #0e0e0e;
+      color: #ffffff;
+      padding: 12px 14px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: 1px solid #2a2a2a;
+      resize: none;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: #888;
+    }
+
+    input:focus,
+    textarea:focus {
+      outline: none;
+      border-color: #00bcd4;
+    }
+
+    button {
+      padding: 14px;
+      background: linear-gradient(135deg, #0077b6, #00bcd4);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(0, 188, 212, 0.3);
+    }
+
+    @media (max-width: 480px) {
+      .contact-container {
+        margin: 30px 15px;
+        padding: 20px;
+      }
+
+      .contact-title {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="/index.html">        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" id="home">
+        <path d="M1472 992v480q0 26-19 45t-45 19h-384v-384H768v384H384q-26 0-45-19t-19-45V992q0-1 .5-3t.5-3l575-474 575 474q1 2 1 6zm223-69-62 74q-8 9-21 11h-3q-13 0-21-7L896 424l-692 577q-12 8-24 7-13-2-21-11l-62-74q-8-10-7-23.5t11-21.5l719-599q32-26 76-26t76 26l244 204V288q0-14 9-23t23-9h192q14 0 23 9t9 23v408l219 182q10 8 11 21.5t-7 23.5z"></path>
+        </svg></a>
+      </li>
+      <li><a href="/pages/socials.html">Services</a></li>
+      <li><a href="/pages/contact.html">Contact</a></li>
+      <li><a href="/pages/aboutme.html">About Me</a></li>
+      <li><a href="/pages/socials.html">Socials</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <div class="contact-container">
+    <div class="contact-title">Contact Me</div>
+    <p class="contact-message">
+      Feel free to reach out using the form below. I’ll get back to you as soon as possible.
+    </p>
+
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+</body>
+</html>

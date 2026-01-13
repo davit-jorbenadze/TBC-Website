@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services</title>
+  <link rel="stylesheet" href="./page-style.css">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: #0e0e0e;
+      color: #eaeaea;
+    }
+
+    .services-container {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .services-title {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .services-subtitle {
+      color: #bdbdbd;
+      margin-bottom: 40px;
+      max-width: 600px;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    .service-card {
+      background: #161616;
+      padding: 24px;
+      border-radius: 14px;
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+    }
+
+    .service-icon {
+      font-size: 28px;
+      margin-bottom: 12px;
+    }
+
+    .service-title {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #ffffff;
+    }
+
+    .service-description {
+      font-size: 15px;
+      color: #bdbdbd;
+      line-height: 1.6;
+    }
+
+    .cta {
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    .cta p {
+      margin-bottom: 16px;
+      color: #bdbdbd;
+    }
+
+    .cta a {
+      display: inline-block;
+      padding: 14px 28px;
+      background: linear-gradient(135deg, #0077b6, #00bcd4);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: 600;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .cta a:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 25px rgba(0, 188, 212, 0.35);
+    }
+
+    @media (max-width: 480px) {
+      .services-title {
+        font-size: 26px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="/index.html">        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" id="home">
+        <path d="M1472 992v480q0 26-19 45t-45 19h-384v-384H768v384H384q-26 0-45-19t-19-45V992q0-1 .5-3t.5-3l575-474 575 474q1 2 1 6zm223-69-62 74q-8 9-21 11h-3q-13 0-21-7L896 424l-692 577q-12 8-24 7-13-2-21-11l-62-74q-8-10-7-23.5t11-21.5l719-599q32-26 76-26t76 26l244 204V288q0-14 9-23t23-9h192q14 0 23 9t9 23v408l219 182q10 8 11 21.5t-7 23.5z"></path>
+        </svg></a>
+      </li>
+      <li><a href="/pages/socials.html">Services</a></li>
+      <li><a href="/pages/contact.html">Contact</a></li>
+      <li><a href="/pages/aboutme.html">About Me</a></li>
+      <li><a href="/pages/socials.html">Socials</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+  <div class="services-container">
+    <h1 class="services-title">Frontend Development Services</h1>
+    <p class="services-subtitle">
+      I help individuals and businesses build fast, modern, and user-friendly web interfaces using clean, scalable frontend technologies.
+    </p>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">💻</div>
+        <div class="service-title">Website Development</div>
+        <p class="service-description">
+          Building responsive, accessible websites using HTML, CSS, and JavaScript with modern best practices.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">⚛️</div>
+        <div class="service-title">React Applications</div>
+        <p class="service-description">
+          Developing scalable single-page applications with React, reusable components, and clean architecture.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🎨</div>
+        <div class="service-title">UI Implementation</div>
+        <p class="service-description">
+          Turning Figma and design mockups into pixel-perfect, responsive interfaces.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🚀</div>
+        <div class="service-title">Performance & Optimization</div>
+        <p class="service-description">
+          Improving load times, code quality, and accessibility for better user experience.
+        </p>
+      </div>
+    </div>
+
+    <div class="cta">
+      <p>Have a project or need help with frontend development?</p>
+      <a href="contact.html">Contact Me</a>
+    </div>
+  </div>
+
+</body>
+</html>
